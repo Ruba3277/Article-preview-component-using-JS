@@ -102,12 +102,27 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 7px;
+    cursor: pointer;
     
+}
+.share-icon img {
+  height: 14px;
+  width: 14px;
+  object-fit: unset;
+  border-radius: 0;
+  pointer-events: none
+}
+.share-icon.active {
+  background-color: var(--paragraph-font-color);
+}
+.share-icon.active img {
+  filter: brightness(0) invert(1);
 }
 .share{
     
     margin-left: auto;
 }
+
 .share-panel {
     background-color: var(--share-panel-bg-color);
     display: flex;
